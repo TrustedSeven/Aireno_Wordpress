@@ -1,0 +1,7 @@
+2023-01-12T09:26:20+00:00 CRITICAL Uncaught Error: Call to a member function expand_user() on bool in /nas/content/live/aireno/wp-content/plugins/woocommerce-payments/vendor/automattic/jetpack-sync/src/replicastore/class-table-checksum-usermeta.php:163
+Stack trace:
+#0 /nas/content/live/aireno/wp-content/plugins/woocommerce-payments/vendor/automattic/jetpack-sync/src/replicastore/class-table-checksum-usermeta.php(73): Automattic\Jetpack\Sync\Replicastore\Table_Checksum_Usermeta->expand_and_sanitize_user_meta(Object(WP_User))
+#1 /nas/content/live/aireno/wp-content/plugins/woocommerce-payments/vendor/automattic/jetpack-sync/src/class-replicastore.php(1354): Automattic\Jetpack\Sync\Replicastore\Table_Checksum_Usermeta->calculate_checksum('1', '2', NULL, true)
+#2 /nas/content/live/aireno/wp-content/plugins/woocommerce-payments/vendor/automattic/jetpack-sync/src/class-rest-endpoints.php(432): Automattic\Jetpack\Sync\Replicastore->checksum_histogram('usermeta', 1, '1', '2', Array, false, '', false, true, false)
+#3 /nas/content/live/aireno/wp-includes in /nas/content/live/aireno/wp-content/plugins/woocommerce-payments/vendor/automattic/jetpack-sync/src/replicastore/class-table-checksum-usermeta.php on line 163
+

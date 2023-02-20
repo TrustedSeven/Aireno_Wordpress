@@ -1,0 +1,59 @@
+.pearl-title {
+    font-weight: 600;
+    color: #000
+}
+
+.pearl-description {
+    font-size: 11px;
+    color: #000;
+}
+
+.refine-area {
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #fceaea;
+    margin-bottom: 15px;
+}
+
+.refine-area .refine-header,
+.refine-area .refine-sub-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.refine-area .refine-header > label {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.refine-area .refine-sub-header > label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #525050;
+}
+
+.refine-sub-content {
+    padding-left: 15px;
+}
+
+.refine-sub-content table {
+    margin-bottom: 0px !important;
+}
+
+.refine-sub-content table td {
+    border-top: none !important;
+}
+
+.refine-sub-content table td:last-of-type {
+    text-align: right;
+}
+
+.pac-container {
+    z-index : 2001 !important;
+}
+
+.rounded-10px {
+    border-radius : 10px;
+}

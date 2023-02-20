@@ -1,0 +1,58 @@
+/*
+Theme Name: Aireno
+Text Domain: aireno
+Version: 1.0.0
+Tested up to: 5.9.3
+Requires at least: 5.9.3
+Requires PHP: 7.4
+Description: A theme for Aireno.com.
+Author: Vasile Darmaz
+Author URI: https://www.freelancer.com/u/VasileDarmaz/
+Theme URI: https://www.aireno.com/
+*/
+.body {
+  min-height: -webkit-fill-available;
+}
+.landing-header {
+    background-color: white;
+}
+textarea#comment {
+    width : 100%;
+}
+.navigation.pagination > .nav-links > * {
+    padding : 10px 12px;
+    font-size : 16px;
+}
+.navigation.post-navigation {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+}
+.navigation.post-navigation .nav-links{
+    width : 100%;
+}
+.navigation.post-navigation .nav-links > *{
+    display : inline-block;
+}
+.navigation.post-navigation .nav-links .nav-prev{
+    float : left;
+}
+.navigation.post-navigation .nav-links .nav-next{
+    float : right;
+}
+.navigation.post-navigation .nav-links .post-title{
+    display : none;
+}
+body.blockui .blockui-overlay {
+    position: fixed !important;
+}
+.text-white > a.msg-link {
+    color : white !important;
+    font-weight: 900 !important;
+}
+.start-35 {
+    left : 35% !important;
+}

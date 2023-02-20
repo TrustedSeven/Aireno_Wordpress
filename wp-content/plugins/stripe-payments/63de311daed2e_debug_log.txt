@@ -1,0 +1,353 @@
+[02/04/2023 10:19:09 AM] - handle_create_pi() -  Product ID: 952, Captcha Type: , Txn Counter: 0, IP: 115.64.148.211
+[02/04/2023 10:19:09 AM] - Page load signature check done!
+[02/04/2023 10:19:09 AM] - Request usage count is valid for this IP addresss. IP: 115.64.148.211, Request Count: 1
+[02/04/2023 10:19:11 AM] - handle_confirm_pi() -  Product ID: 952, Captcha Type: , Txn Counter: 0, IP: 115.64.148.211
+[02/04/2023 10:19:11 AM] - Page load signature check done!
+[02/04/2023 10:19:11 AM] - Request usage count is valid for this IP addresss. IP: 115.64.148.211, Request Count: 2
+[02/04/2023 10:19:17 AM] - Payment processing started.
+[02/04/2023 10:19:17 AM] - Got product ID: 952
+[02/04/2023 10:19:17 AM] - Firing asp_ng_process_ipn_product_item_override filter.
+[02/04/2023 10:19:17 AM] - Firing asp_ng_process_ipn_payment_data_item_override filter.
+[02/04/2023 10:19:17 AM] - The transaction ID of this notification is: ch_3MXipuDry1VajN1w2XC8naAq
+[02/04/2023 10:19:17 AM] - Constructing checkout result and order data.
+[02/04/2023 10:19:17 AM] - Firing asp_ng_payment_completed filter.
+[02/04/2023 10:19:17 AM] - Firing asp_ng_payment_completed_update_pi filter.
+[02/04/2023 10:19:17 AM] - Firing asp_stripe_payment_completed action.
+[02/04/2023 10:19:18 AM] - Notification email sent to buyer: jonsumma@gmail.com, from email address used: hi@aireno.com.au
+[02/04/2023 10:19:18 AM] - Notification email sent to seller: hi@aireno.com.au, from email address used: Aireno <billing@aireno.com.au>
+[02/04/2023 10:19:18 AM] - Payment has been processed successfully.
+[02/04/2023 10:19:18 AM] - Redirecting to results page "https://www.aireno.com.au/thank-you/"
+
+[02/14/2023 08:35:30 AM] - handle_create_pi() -  Product ID: 928, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:35:30 AM] - Page load signature check done!
+[02/14/2023 08:35:30 AM] - Request usage count is valid for this IP addresss. IP: 115.42.121.166, Request Count: 1
+[02/14/2023 08:36:02 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:36:02 AM] - Page load signature check done!
+[02/14/2023 08:36:02 AM] - Request usage count is valid for this IP addresss. IP: 115.42.121.166, Request Count: 2
+[02/14/2023 08:36:04 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:36:04 AM] - Page load signature check done!
+[02/14/2023 08:36:04 AM] - Request usage count is valid for this IP addresss. IP: 115.42.121.166, Request Count: 3
+[02/14/2023 08:36:07 AM] - FAILURE: Following error occurred during payment processing: Stripe API error occurred: Your card does not support this type of purchase.
+[02/14/2023 08:36:08 AM] - Error email sent to hi@aireno.com.au, from email address used: Aireno <billing@aireno.com.au>
+[02/14/2023 08:43:46 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:46 AM] - Page load signature check done!
+[02/14/2023 08:43:46 AM] - Request usage count is valid for this IP addresss. IP: 115.42.121.166, Request Count: 4
+[02/14/2023 08:43:47 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:47 AM] - Page load signature check done!
+[02/14/2023 08:43:47 AM] - Request usage count is valid for this IP addresss. IP: 115.42.121.166, Request Count: 5
+[02/14/2023 08:43:48 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:48 AM] - Page load signature check done!
+[02/14/2023 08:43:48 AM] - Request usage count is valid for this IP addresss. IP: 115.42.121.166, Request Count: 6
+[02/14/2023 08:43:48 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:48 AM] - Page load signature check done!
+[02/14/2023 08:43:48 AM] - Request usage count is valid for this IP addresss. IP: 115.42.121.166, Request Count: 7
+[02/14/2023 08:43:48 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:48 AM] - Page load signature check done!
+[02/14/2023 08:43:48 AM] - Request usage count is valid for this IP addresss. IP: 115.42.121.166, Request Count: 8
+[02/14/2023 08:43:49 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:49 AM] - Page load signature check done!
+[02/14/2023 08:43:49 AM] - Request usage count is valid for this IP addresss. IP: 115.42.121.166, Request Count: 9
+[02/14/2023 08:43:49 AM] - FAILURE: Following error occurred during payment processing: Stripe API error occurred: Unrecognized request URL (GET: /v1/payment_intents/). If you are trying to list objects, remove the trailing slash. If you are trying to retrieve an object, make sure you passed a valid (non-empty) identifier in your code. Please see https://stripe.com/docs or we can help at https://support.stripe.com/.
+[02/14/2023 08:43:49 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:49 AM] - Page load signature check done!
+[02/14/2023 08:43:49 AM] - Request usage count is valid for this IP addresss. IP: 115.42.121.166, Request Count: 10
+[02/14/2023 08:43:49 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:49 AM] - Page load signature check done!
+[02/14/2023 08:43:49 AM] - Request usage count is valid for this IP addresss. IP: 115.42.121.166, Request Count: 11
+[02/14/2023 08:43:49 AM] - FAILURE: Following error occurred during payment processing: Stripe API error occurred: Unrecognized request URL (GET: /v1/payment_intents/). If you are trying to list objects, remove the trailing slash. If you are trying to retrieve an object, make sure you passed a valid (non-empty) identifier in your code. Please see https://stripe.com/docs or we can help at https://support.stripe.com/.
+[02/14/2023 08:43:49 AM] - Error email sent to hi@aireno.com.au, from email address used: Aireno <billing@aireno.com.au>
+[02/14/2023 08:43:50 AM] - Error email sent to hi@aireno.com.au, from email address used: Aireno <billing@aireno.com.au>
+[02/14/2023 08:43:50 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:50 AM] - Page load signature check done!
+[02/14/2023 08:43:50 AM] - Request usage count is valid for this IP addresss. IP: 115.42.121.166, Request Count: 12
+[02/14/2023 08:43:50 AM] - FAILURE: Following error occurred during payment processing: Stripe API error occurred: Unrecognized request URL (GET: /v1/payment_intents/). If you are trying to list objects, remove the trailing slash. If you are trying to retrieve an object, make sure you passed a valid (non-empty) identifier in your code. Please see https://stripe.com/docs or we can help at https://support.stripe.com/.
+[02/14/2023 08:43:50 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:50 AM] - Page load signature check done!
+[02/14/2023 08:43:50 AM] - Request usage count is valid for this IP addresss. IP: 115.42.121.166, Request Count: 13
+[02/14/2023 08:43:50 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:50 AM] - Page load signature check done!
+[02/14/2023 08:43:50 AM] - Request usage count is valid for this IP addresss. IP: 115.42.121.166, Request Count: 14
+[02/14/2023 08:43:50 AM] - FAILURE: Following error occurred during payment processing: Stripe API error occurred: Unrecognized request URL (GET: /v1/payment_intents/). If you are trying to list objects, remove the trailing slash. If you are trying to retrieve an object, make sure you passed a valid (non-empty) identifier in your code. Please see https://stripe.com/docs or we can help at https://support.stripe.com/.
+[02/14/2023 08:43:50 AM] - Error email sent to hi@aireno.com.au, from email address used: Aireno <billing@aireno.com.au>
+[02/14/2023 08:43:51 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:51 AM] - Page load signature check done!
+[02/14/2023 08:43:51 AM] - Request usage count is valid for this IP addresss. IP: 115.42.121.166, Request Count: 15
+[02/14/2023 08:43:51 AM] - Error email sent to hi@aireno.com.au, from email address used: Aireno <billing@aireno.com.au>
+[02/14/2023 08:43:51 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:51 AM] - Page load signature check done!
+[02/14/2023 08:43:51 AM] - Request usage count is valid for this IP addresss. IP: 115.42.121.166, Request Count: 16
+[02/14/2023 08:43:51 AM] - FAILURE: Following error occurred during payment processing: Stripe API error occurred: Unrecognized request URL (GET: /v1/payment_intents/). If you are trying to list objects, remove the trailing slash. If you are trying to retrieve an object, make sure you passed a valid (non-empty) identifier in your code. Please see https://stripe.com/docs or we can help at https://support.stripe.com/.
+[02/14/2023 08:43:51 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:51 AM] - Page load signature check done!
+[02/14/2023 08:43:51 AM] - Request usage count is valid for this IP addresss. IP: 115.42.121.166, Request Count: 17
+[02/14/2023 08:43:51 AM] - Error email sent to hi@aireno.com.au, from email address used: Aireno <billing@aireno.com.au>
+[02/14/2023 08:43:52 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:52 AM] - Page load signature check done!
+[02/14/2023 08:43:52 AM] - Request usage count is valid for this IP addresss. IP: 115.42.121.166, Request Count: 18
+[02/14/2023 08:43:52 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:52 AM] - Page load signature check done!
+[02/14/2023 08:43:52 AM] - Request usage count is valid for this IP addresss. IP: 115.42.121.166, Request Count: 19
+[02/14/2023 08:43:52 AM] - FAILURE: Following error occurred during payment processing: Stripe API error occurred: Unrecognized request URL (GET: /v1/payment_intents/). If you are trying to list objects, remove the trailing slash. If you are trying to retrieve an object, make sure you passed a valid (non-empty) identifier in your code. Please see https://stripe.com/docs or we can help at https://support.stripe.com/.
+[02/14/2023 08:43:52 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:52 AM] - Page load signature check done!
+[02/14/2023 08:43:52 AM] - Request usage count is valid for this IP addresss. IP: 115.42.121.166, Request Count: 20
+[02/14/2023 08:43:52 AM] - Error email sent to hi@aireno.com.au, from email address used: Aireno <billing@aireno.com.au>
+[02/14/2023 08:43:52 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:52 AM] - Page load signature check done!
+[02/14/2023 08:43:52 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 21
+[02/14/2023 08:43:52 AM] - FAILURE: Following error occurred during payment processing: Stripe API error occurred: Unrecognized request URL (GET: /v1/payment_intents/). If you are trying to list objects, remove the trailing slash. If you are trying to retrieve an object, make sure you passed a valid (non-empty) identifier in your code. Please see https://stripe.com/docs or we can help at https://support.stripe.com/.
+[02/14/2023 08:43:53 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:53 AM] - Page load signature check done!
+[02/14/2023 08:43:53 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 22
+[02/14/2023 08:43:53 AM] - Error email sent to hi@aireno.com.au, from email address used: Aireno <billing@aireno.com.au>
+[02/14/2023 08:43:53 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:53 AM] - Page load signature check done!
+[02/14/2023 08:43:53 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 23
+[02/14/2023 08:43:53 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:53 AM] - Page load signature check done!
+[02/14/2023 08:43:53 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 24
+[02/14/2023 08:43:53 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:53 AM] - Page load signature check done!
+[02/14/2023 08:43:53 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 25
+[02/14/2023 08:43:54 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:54 AM] - Page load signature check done!
+[02/14/2023 08:43:54 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 26
+[02/14/2023 08:43:54 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:54 AM] - Page load signature check done!
+[02/14/2023 08:43:54 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 27
+[02/14/2023 08:43:54 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:54 AM] - Page load signature check done!
+[02/14/2023 08:43:54 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 28
+[02/14/2023 08:43:54 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:54 AM] - Page load signature check done!
+[02/14/2023 08:43:54 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 29
+[02/14/2023 08:43:55 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:55 AM] - Page load signature check done!
+[02/14/2023 08:43:55 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 30
+[02/14/2023 08:43:55 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:55 AM] - Page load signature check done!
+[02/14/2023 08:43:55 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 31
+[02/14/2023 08:43:55 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:55 AM] - Page load signature check done!
+[02/14/2023 08:43:55 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 32
+[02/14/2023 08:43:55 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:55 AM] - Page load signature check done!
+[02/14/2023 08:43:55 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 33
+[02/14/2023 08:43:55 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:55 AM] - Page load signature check done!
+[02/14/2023 08:43:55 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 34
+[02/14/2023 08:43:55 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:55 AM] - Page load signature check done!
+[02/14/2023 08:43:55 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 35
+[02/14/2023 08:43:56 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:56 AM] - Page load signature check done!
+[02/14/2023 08:43:56 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 36
+[02/14/2023 08:43:56 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:56 AM] - Page load signature check done!
+[02/14/2023 08:43:56 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 37
+[02/14/2023 08:43:56 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:56 AM] - Page load signature check done!
+[02/14/2023 08:43:56 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 38
+[02/14/2023 08:43:56 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:56 AM] - Page load signature check done!
+[02/14/2023 08:43:56 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 39
+[02/14/2023 08:43:56 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:56 AM] - Page load signature check done!
+[02/14/2023 08:43:56 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 40
+[02/14/2023 08:43:57 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:57 AM] - Page load signature check done!
+[02/14/2023 08:43:57 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 41
+[02/14/2023 08:43:57 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:57 AM] - Page load signature check done!
+[02/14/2023 08:43:57 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 42
+[02/14/2023 08:43:57 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:57 AM] - Page load signature check done!
+[02/14/2023 08:43:57 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 43
+[02/14/2023 08:43:57 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:57 AM] - Page load signature check done!
+[02/14/2023 08:43:57 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 44
+[02/14/2023 08:43:57 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:57 AM] - Page load signature check done!
+[02/14/2023 08:43:57 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 45
+[02/14/2023 08:43:58 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:58 AM] - Page load signature check done!
+[02/14/2023 08:43:58 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 46
+[02/14/2023 08:43:58 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:58 AM] - Page load signature check done!
+[02/14/2023 08:43:58 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 47
+[02/14/2023 08:43:58 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:58 AM] - Page load signature check done!
+[02/14/2023 08:43:58 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 48
+[02/14/2023 08:43:58 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:58 AM] - Page load signature check done!
+[02/14/2023 08:43:58 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 49
+[02/14/2023 08:43:58 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:58 AM] - Page load signature check done!
+[02/14/2023 08:43:58 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 50
+[02/14/2023 08:43:59 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:59 AM] - Page load signature check done!
+[02/14/2023 08:43:59 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 51
+[02/14/2023 08:43:59 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:59 AM] - Page load signature check done!
+[02/14/2023 08:43:59 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 52
+[02/14/2023 08:43:59 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:59 AM] - Page load signature check done!
+[02/14/2023 08:43:59 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 53
+[02/14/2023 08:43:59 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:43:59 AM] - Page load signature check done!
+[02/14/2023 08:43:59 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 54
+[02/14/2023 08:44:00 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:00 AM] - Page load signature check done!
+[02/14/2023 08:44:00 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 55
+[02/14/2023 08:44:00 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:00 AM] - Page load signature check done!
+[02/14/2023 08:44:00 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 56
+[02/14/2023 08:44:00 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:00 AM] - Page load signature check done!
+[02/14/2023 08:44:00 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 57
+[02/14/2023 08:44:00 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:00 AM] - Page load signature check done!
+[02/14/2023 08:44:00 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 58
+[02/14/2023 08:44:00 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:00 AM] - Page load signature check done!
+[02/14/2023 08:44:00 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 59
+[02/14/2023 08:44:01 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:01 AM] - Page load signature check done!
+[02/14/2023 08:44:01 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 60
+[02/14/2023 08:44:01 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:01 AM] - Page load signature check done!
+[02/14/2023 08:44:01 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 61
+[02/14/2023 08:44:02 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:02 AM] - Page load signature check done!
+[02/14/2023 08:44:02 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 62
+[02/14/2023 08:44:02 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:02 AM] - Page load signature check done!
+[02/14/2023 08:44:02 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 63
+[02/14/2023 08:44:36 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:36 AM] - Page load signature check done!
+[02/14/2023 08:44:36 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 64
+[02/14/2023 08:44:37 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:37 AM] - Page load signature check done!
+[02/14/2023 08:44:37 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 65
+[02/14/2023 08:44:37 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:37 AM] - Page load signature check done!
+[02/14/2023 08:44:37 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 66
+[02/14/2023 08:44:38 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:38 AM] - Page load signature check done!
+[02/14/2023 08:44:38 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 67
+[02/14/2023 08:44:38 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:38 AM] - Page load signature check done!
+[02/14/2023 08:44:38 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 68
+[02/14/2023 08:44:39 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:39 AM] - Page load signature check done!
+[02/14/2023 08:44:39 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 69
+[02/14/2023 08:44:43 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:43 AM] - Page load signature check done!
+[02/14/2023 08:44:43 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 70
+[02/14/2023 08:44:43 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:43 AM] - Page load signature check done!
+[02/14/2023 08:44:43 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 71
+[02/14/2023 08:44:44 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:44 AM] - Page load signature check done!
+[02/14/2023 08:44:44 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 72
+[02/14/2023 08:44:44 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:44 AM] - Page load signature check done!
+[02/14/2023 08:44:44 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 73
+[02/14/2023 08:44:44 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:44 AM] - Page load signature check done!
+[02/14/2023 08:44:44 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 74
+[02/14/2023 08:44:44 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:44 AM] - Page load signature check done!
+[02/14/2023 08:44:44 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 75
+[02/14/2023 08:44:45 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:45 AM] - Page load signature check done!
+[02/14/2023 08:44:45 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 76
+[02/14/2023 08:44:45 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:45 AM] - Page load signature check done!
+[02/14/2023 08:44:45 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 77
+[02/14/2023 08:44:45 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:45 AM] - Page load signature check done!
+[02/14/2023 08:44:45 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 78
+[02/14/2023 08:44:45 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:45 AM] - Page load signature check done!
+[02/14/2023 08:44:45 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 79
+[02/14/2023 08:44:46 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:46 AM] - Page load signature check done!
+[02/14/2023 08:44:46 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 80
+[02/14/2023 08:44:46 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:46 AM] - Page load signature check done!
+[02/14/2023 08:44:46 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 81
+[02/14/2023 08:44:50 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:50 AM] - Page load signature check done!
+[02/14/2023 08:44:50 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 82
+[02/14/2023 08:44:51 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:51 AM] - Page load signature check done!
+[02/14/2023 08:44:51 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 83
+[02/14/2023 08:44:51 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:51 AM] - Page load signature check done!
+[02/14/2023 08:44:51 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 84
+[02/14/2023 08:44:51 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:51 AM] - Page load signature check done!
+[02/14/2023 08:44:51 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 85
+[02/14/2023 08:44:52 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:52 AM] - Page load signature check done!
+[02/14/2023 08:44:52 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 86
+[02/14/2023 08:44:52 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:52 AM] - Page load signature check done!
+[02/14/2023 08:44:52 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 87
+[02/14/2023 08:44:52 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:52 AM] - Page load signature check done!
+[02/14/2023 08:44:52 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 88
+[02/14/2023 08:44:52 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:52 AM] - Page load signature check done!
+[02/14/2023 08:44:52 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 89
+[02/14/2023 08:44:52 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:52 AM] - Page load signature check done!
+[02/14/2023 08:44:52 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 90
+[02/14/2023 08:44:52 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:52 AM] - Page load signature check done!
+[02/14/2023 08:44:52 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 91
+[02/14/2023 08:44:52 AM] - handle_create_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:52 AM] - Page load signature check done!
+[02/14/2023 08:44:52 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 92
+[02/14/2023 08:44:52 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:52 AM] - Page load signature check done!
+[02/14/2023 08:44:52 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 93
+[02/14/2023 08:44:58 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:58 AM] - Page load signature check done!
+[02/14/2023 08:44:58 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 94
+[02/14/2023 08:44:58 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:58 AM] - Page load signature check done!
+[02/14/2023 08:44:58 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 95
+[02/14/2023 08:44:59 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:59 AM] - Page load signature check done!
+[02/14/2023 08:44:59 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 96
+[02/14/2023 08:44:59 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:59 AM] - Page load signature check done!
+[02/14/2023 08:44:59 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 97
+[02/14/2023 08:44:59 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:59 AM] - Page load signature check done!
+[02/14/2023 08:44:59 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 98
+[02/14/2023 08:44:59 AM] - handle_confirm_pi() -  Product ID: 796, Captcha Type: , Txn Counter: 0, IP: 115.42.121.166
+[02/14/2023 08:44:59 AM] - Page load signature check done!
+[02/14/2023 08:44:59 AM] - FAILURE: Request usage count limit reached for this IP address. IP: 115.42.121.166, Request Count: 99
+[02/19/2023 02:59:20 AM] - handle_create_pi() -  Product ID: 1431, Captcha Type: , Txn Counter: 0, IP: 202.74.197.210
+[02/19/2023 02:59:20 AM] - Page load signature check done!
+[02/19/2023 02:59:20 AM] - Request usage count is valid for this IP addresss. IP: 202.74.197.210, Request Count: 1
+[02/19/2023 02:59:23 AM] - handle_confirm_pi() -  Product ID: 1431, Captcha Type: , Txn Counter: 0, IP: 202.74.197.210
+[02/19/2023 02:59:23 AM] - Page load signature check done!
+[02/19/2023 02:59:23 AM] - Request usage count is valid for this IP addresss. IP: 202.74.197.210, Request Count: 2
+[02/19/2023 02:59:29 AM] - Payment processing started.
+[02/19/2023 02:59:29 AM] - Got product ID: 1431
+[02/19/2023 02:59:29 AM] - Firing asp_ng_process_ipn_product_item_override filter.
+[02/19/2023 02:59:29 AM] - Firing asp_ng_process_ipn_payment_data_item_override filter.
+[02/19/2023 02:59:29 AM] - The transaction ID of this notification is: ch_3Md37VDry1VajN1w1pp0MuGr
+[02/19/2023 02:59:29 AM] - Constructing checkout result and order data.
+[02/19/2023 02:59:29 AM] - Firing asp_ng_payment_completed filter.
+[02/19/2023 02:59:29 AM] - Firing asp_ng_payment_completed_update_pi filter.
+[02/19/2023 02:59:29 AM] - Firing asp_stripe_payment_completed action.
+[02/19/2023 02:59:30 AM] - Notification email sent to buyer: jonsumma@gmail.com, from email address used: hi@aireno.com.au
+[02/19/2023 02:59:30 AM] - Notification email sent to seller: hi@aireno.com.au, from email address used: Aireno <billing@aireno.com.au>
+[02/19/2023 02:59:30 AM] - Payment has been processed successfully.
+[02/19/2023 02:59:30 AM] - Redirecting to results page "https://www.aireno.com.au/thank-you/"
+
