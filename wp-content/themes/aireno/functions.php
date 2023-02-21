@@ -1,6 +1,6 @@
 <?php
 define('TEXT_DOMAIN', 'aireno');
-define('AIRENO_VERSION', '1.0.0');
+define('AIRENO_VERSION', '1.0');
 
 const AIRENO_CPT_PROJECT = 'project';
 const AIRENO_CPT_TEMPLATE = 'template';
@@ -551,7 +551,7 @@ function aireno_enqueue_scripts()
                 );
                 wp_enqueue_script(
                     'aireno-single-project',
-                    get_template_directory_uri() . '/assets/js/single-project-9.js',
+                    get_template_directory_uri() . '/assets/js/single-project.js',
                     array(),
                     AIRENO_VERSION,
                     true

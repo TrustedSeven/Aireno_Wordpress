@@ -1940,6 +1940,12 @@ var KTModalNewSchedule = function () {
                                                 // }
                                             } else {
                                                 var schedule_element = $('[data-schedule-id=' + result.id + ']');
+                                                var editted_working_days = parseInt($('[data-kt-element="total-working-days"]').html()) - parseInt(schedule_element.find('[data-kt-element="duration"]').html()) + parseInt(result.duration);
+                                                $('[data-kt-element="total-working-days"]').html(editted_working_days);
+                                                console.log(editted_working_days)
+                                                if(editted_working_days === 0) {
+                                                    $('#project-total-days').remove();
+                                                }
                                                 schedule_element.find('[data-kt-element="duration"]').html(result.duration);
                                                 schedule_element.find('[data-kt-element="title"]').html(result.title);
                                                 schedule_element.find('[data-kt-element="content"]').html(result.detail);
@@ -2453,6 +2459,7 @@ $('body').on('click', '[data-kt-element="schedule"] [data-kt-element="delete"]',
         customClass: {confirmButton: "btn btn-primary"}
     }).then((function (t) {
         if (t.isConfirmed) {
+            
             var formData = new FormData();
             formData.set('action', 'aireno_delete_schedule');
             formData.set('schedule_id', $schedule.data('schedule-id'));
@@ -2488,6 +2495,11 @@ $('body').on('click', '[data-kt-element="schedule"] [data-kt-element="delete"]',
                             customClass: {confirmButton: "btn btn-primary"}
                         });
                     } else {
+                        var deleted_working_days = parseInt($('[data-kt-element="total-working-days"]').html()) - parseInt($schedule.find('[data-kt-element="duration"]').html());
+                        $('[data-kt-element="total-working-days"]').html(deleted_working_days);
+                        if(deleted_working_days === 0) {
+                            $('#project-total-days').remove();
+                        }
                         $schedule.siblings().find('[data-kt-element="schedules-count"]').html(parseInt($schedule.siblings().find('[data-kt-element="schedules-count"]').html()) - 1);
                         $schedule.remove();
                     }

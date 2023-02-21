@@ -2073,18 +2073,115 @@ foreach ($team_members as $team_member) {
                                 </div>
                             </div>
                             <!--End:Overview-->
+                            
                             <!--Begin:Schedules-->
+                            
                             <div class="tab-pane fade show <?= $tab == 'project-schedules' ? 'active' : '' ?>"
                                  id="project-schedules" role="tabpanel">
+                                 <?php
+                                    $args = array(
+                                        'post_type' => AIRENO_CPT_SCHEDULE,
+                                        'post_status' => array(
+                                            'publish'
+                                        ),
+                                        'posts_per_page' => -1,
+                                        'meta_key' => 'project_id',
+                                        'meta_value' => $project_id,
+                                        'meta_compare' => '='
+                                    );
+                                    $schedule_query = new WP_Query($args);
+                                    $total_working_days = 0;
+                                    $schedules = array();
+                                    if ($schedule_query->have_posts()) {
+                                        while ($schedule_query->have_posts()) {
+                                            $schedule_query->the_post();
+                                            $schedule_status = get_field('status', get_the_ID());
+                                            $schedule_tasks = array();
+                                            $schedule_comments = array();
+                                            $schedule_attachments = array();
+                                            if (have_rows('tasks')) {
+                                                while (have_rows('tasks')) {
+                                                    the_row();
+                                                    $schedule_tasks[] = array(
+                                                        'title' => get_sub_field('title'),
+                                                        'done' => get_sub_field('done')
+                                                    );
+                                                }
+                                            }
+
+                                            if (have_rows('comments')) {
+                                                while (have_rows('comments')) {
+                                                    the_row();
+                                                    $schedule_comments[] = get_sub_field('comment');
+                                                }
+                                            }
+                                            $schedules[$schedule_status][get_the_ID()] = array(
+                                                'ID' => get_the_ID(),
+                                                'title' => get_the_title(),
+                                                'content' => get_the_content(),
+                                                'tasks' => $schedule_tasks,
+                                                'comments' => $schedule_comments,
+                                                'duration' => intval(get_field('duration', get_the_ID()))
+                                            );
+                                            $total_working_days += $schedules[$schedule_status][get_the_ID()]['duration'];
+                                        }
+                                    }
+                                    wp_reset_query();
+                                ?>
+                                <!-- -->
+                                <?php if($total_working_days !== 0) { ?>
+                                    <div class="tab-pane fade show <?= $tab == 'project-schedules' ? 'active' : '' ?>"
+                                        id="project-total-days" role="tabpanel">
+                                        <!--begin::Row-->
+                                        <div class="row g-9 mb-9">
+                                            <div class="col-md-3">
+                                                <div class="border border-primary border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
+                                                    <!--begin::Number-->
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="fs-4 fw-bolder me-3"> 
+                                                            <span class="project-date"><?= $project_date ?></span> 
+                                                            <a
+                                                                href="javascript:void(0)"
+                                                                class="btn btn-icon btn-active-color-primary w-25px h-25px"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#kt_modal_edit_project_date"> 
+                                                                <i class="bi bi-pencil-fill fs-7 text-dark"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                    <!--end::Number-->
+                                                    <!--begin::Label-->
+                                                    <div class="fw-bold fs-6 text-gray-400">Target Completion Date</div>
+                                                    <!--end::Label-->
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="border border-primary border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
+                                                    <!--begin::Number-->
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="btn btn-success fw-bolder fs-4 px-4 py-0 mb-1"> 
+                                                            <span data-kt-element="total-working-days"><?= $total_working_days ?></span> Days
+                                                        </div>
+                                                    </div>
+                                                    <!--end::Number-->
+                                                    <!--begin::Label-->
+                                                    <div class="fw-bold fs-6 text-gray-400">Total Working Days</div>
+                                                    <!--end::Label-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php } ?>
+                                <!-- -->
                                 <!--begin::Row-->
                                 <div class="row g-9 mb-9">
-                                    <div class="col-md-4">
+                                    <div class="col-md-3">
                                         <a href="javascript:void(0)"
                                            class="btn btn-primary w-100 fs-6 fw-bolder px-8 py-4"
                                            id="btnCreateSchedule"><i class="fa-solid fa-calendar-plus text-light"></i>
                                             Add target</a>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-3">
                                         <a href="javascript:void(0)"
                                            class="btn btn-success fw-bolder w-100 fs-6 px-8 py-4"
                                            id="btnCreateScheduleByTemplate" data-bs-toggle="modal"
@@ -2093,54 +2190,6 @@ foreach ($team_members as $team_member) {
                                     </div>
                                 </div>
                                 <!--end::Row-->
-                                <?php
-                                $args = array(
-                                    'post_type' => AIRENO_CPT_SCHEDULE,
-                                    'post_status' => array(
-                                        'publish'
-                                    ),
-                                    'posts_per_page' => -1,
-                                    'meta_key' => 'project_id',
-                                    'meta_value' => $project_id,
-                                    'meta_compare' => '='
-                                );
-                                $schedule_query = new WP_Query($args);
-                                $schedules = array();
-                                if ($schedule_query->have_posts()) {
-                                    while ($schedule_query->have_posts()) {
-                                        $schedule_query->the_post();
-                                        $schedule_status = get_field('status', get_the_ID());
-                                        $schedule_tasks = array();
-                                        $schedule_comments = array();
-                                        $schedule_attachments = array();
-                                        if (have_rows('tasks')) {
-                                            while (have_rows('tasks')) {
-                                                the_row();
-                                                $schedule_tasks[] = array(
-                                                    'title' => get_sub_field('title'),
-                                                    'done' => get_sub_field('done')
-                                                );
-                                            }
-                                        }
-
-                                        if (have_rows('comments')) {
-                                            while (have_rows('comments')) {
-                                                the_row();
-                                                $schedule_comments[] = get_sub_field('comment');
-                                            }
-                                        }
-                                        $schedules[$schedule_status][get_the_ID()] = array(
-                                            'ID' => get_the_ID(),
-                                            'title' => get_the_title(),
-                                            'content' => get_the_content(),
-                                            'tasks' => $schedule_tasks,
-                                            'comments' => $schedule_comments,
-                                            'duration' => intval(get_field('duration', get_the_ID()))
-                                        );
-                                    }
-                                }
-                                wp_reset_query();
-                                ?>
                                 <!--begin::Row-->
                                 <div class="row g-9 schedules">
                                     <!--begin::Col-->
@@ -2488,10 +2537,8 @@ foreach ($team_members as $team_member) {
                                                                      data-kt-element="kt_schedule_attachment_previews">
                                                                     <div class="d-none p-1 d-flex"
                                                                          data-kt-element="preview-template">
-                                                                        <div
-                                                                                class="position-relative flex-stack border-dotted border-1 w-100 d-flex p-2 rounded-10px">
-                                                                            <div
-                                                                                    class="d-flex justify-content-start align-items-center">
+                                                                        <div class="position-relative flex-stack border-dotted border-1 w-100 d-flex p-2 rounded-10px">
+                                                                            <div class="d-flex justify-content-start align-items-center">
                                                                                 <div class="d-inline-block ms-5">
                                                                                     <span class="d-block img-title">title.png</span>
                                                                                     <span
